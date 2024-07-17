@@ -1,0 +1,6 @@
+api_user: admin
+api_password: admin_password
+endpoints:
+    - http://192.168.8.12
+    - http://192.168.5.13
+    - http://192.168.5.14
