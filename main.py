@@ -25,7 +25,7 @@ def set_time(endpoint, auth):
     if r.status_code != 200:
         logging.error(f"Status Code for {endpoint}: {r.status_code}")
     else:
-        logging.info(f"Set {uri} to {now}")
+        logging.info(f"Set {endpoint} to {now}")
 
 
 def main():
