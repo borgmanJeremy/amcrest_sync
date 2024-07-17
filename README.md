@@ -23,7 +23,7 @@ I recommend running this with a systemd timer like this:
 - https://www.tderflinger.com/using-systemd-to-start-a-python-application-with-virtualenv
 
 ## Docker
-If you want to deploy this python application as a container there is an included dockerfile
+If you want to deploy this python application as a container there is an included dockerfile. Take careful note to set the `TZ` environment variable appropriately in the [dockerfile](./dockerfile)
 
 ```bash
 # After adding your config.yml
