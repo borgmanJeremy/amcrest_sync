@@ -22,5 +22,19 @@ endpoints:
 I recommend running this with a systemd timer like this:
 - https://www.tderflinger.com/using-systemd-to-start-a-python-application-with-virtualenv
 
+## Docker
+If you want to deploy this python application as a container there is an included dockerfile
+
+```bash
+# After adding your config.yml
+docker build -t amcrest_sync .
+docker run amcrest_sync:latest
+
+# example log output
+# INFO:root:Camera time is: result=2024-07-17 06:22:22
+# INFO:root:Set http://playroom.camera to 2024-07-17 11:22:21
+# INFO:root:Camera time is: result=2024-07-17 11:22:21
+```
+
 ## Reference 
 - https://drive.google.com/file/d/19d2vQUbqCAjkxJfCadqVqLwKICx88pjx/view
