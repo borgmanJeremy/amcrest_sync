@@ -6,6 +6,9 @@ cases.
 ## Config
 Copy config.example.yml to config.yml. Adjust the user name and password as needed. Then
 if you have multiple cameras place multiple end points in the end point list.
+
+This assumes each camera endpoint has the same credentials. 
+
 ```
 api_user: admin
 api_password: admin_password
