@@ -17,6 +17,7 @@ endpoints:
 
 ## Systemd
 I recommend running this with a systemd timer like this:
+- https://www.tderflinger.com/using-systemd-to-start-a-python-application-with-virtualenv
 
 ## Reference 
 - https://drive.google.com/file/d/19d2vQUbqCAjkxJfCadqVqLwKICx88pjx/view
