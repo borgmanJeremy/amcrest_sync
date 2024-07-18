@@ -25,16 +25,16 @@ def set_time(endpoint, auth):
     if r.status_code != 200:
         logging.error(f"Status Code for {endpoint}: {r.status_code}")
     else:
-        logging.info(f"Set {uri} to {now}")
+        logging.info(f"Set {endpoint} to {now}")
 
 
 def main():
     logging.basicConfig(level=logging.INFO)
-    with open('config.yml', encoding='utf-8') as f:
+    with open("config.yml", encoding="utf-8") as f:
         config = yaml.safe_load(f.read())
 
-    auth = HTTPDigestAuth(config['api_user'], config['api_password'])
-    for endpoint in config['endpoints']:
+    auth = HTTPDigestAuth(config["api_user"], config["api_password"])
+    for endpoint in config["endpoints"]:
         get_time(endpoint, auth)
         set_time(endpoint, auth)
         get_time(endpoint, auth)
